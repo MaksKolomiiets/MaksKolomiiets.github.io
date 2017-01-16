@@ -1,0 +1,127 @@
+body {
+	background-color: #181A1F!important;
+}
+
+.pages {
+	margin-top: 120px;
+}
+
+.pages li {
+	display: inline-block;
+	font: bold 13px/20px 'Montserrat', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.pages a {
+	color: #fd3c3d;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.pages a:hover {
+	color: #fff;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.content {
+	margin-top: 200px;
+	padding-bottom: 90px;
+}
+
+.gallery-foto {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.wrap-gallery img {
+	width: 100%;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.gallery-foto:hover img {
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.gallery-foto:hover .gallery-link {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.gallery-link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	text-align: center;
+	background: rgba(253,60,61,0.5);
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.gallery-link:before {
+	content: '';
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.gallery-link a {
+	display: inline-block;
+	max-width: 100%;
+	vertical-align: middle;
+	font-size: 28px;
+	color: #fff;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.gallery-link a:hover {
+	color: #000;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+/*---------- Modal winwod gallery --------*/
+
+@media screen and (max-width: 767px) {
+	#fancybox-thumbs {
+		display: none;
+	}
+}
+
+/*# sourceMappingURL=style-gallery.css.map */
