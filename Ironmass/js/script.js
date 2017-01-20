@@ -66,9 +66,9 @@ $(document).ready(function() {
 
 //Scroll Top
 $(document).ready(function () {
-    var topShow = 350;
+
     $(window).scroll(function() {
-        if($(this).scrollTop() > topShow) {
+        if($(this).scrollTop() > 350) {
             $('.scroll-top').fadeIn();
         } else {
             $('.scroll-top').fadeOut();
