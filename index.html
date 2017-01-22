@@ -1,3 +1,206 @@
-<h1>My projects</h1>
-<a href="/Bakery">Bakery</a><br>
-<a href="/Ironmass">Ironmass</a><br>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MaksKolomiiets</title>
+
+	<link rel="stylesheet" type="text/css" href="css/grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<!-- Preloader-->
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+
+	<!-- Header start -->
+	<header id="home">
+		<div class="bg-cover bg-screen-height">
+			<div class="header-overlay"></div>
+			<ul class="main-nav">
+				<li><a href="#home">Главная</a></li>
+				<li><a href="#about">О себе</a></li>
+				<li><a href="#works">Работы</a></li>
+				<li><a href="#contact">Контакты</a></li>
+			</ul>
+			<div class="intro">
+				<h1>Максим Коломиец</h1>
+				<h2 class="prof">HTML-верстальщик</h2>
+				<a href="files/Kolomiiets_Maks.pdf" class="summary" target="_blank">Скачать резюме в PDF</a>
+			</div>
+			<div class="scroll-down">
+				<a href="#about">
+					<i class="fa fa-angle-down"></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- Header end -->
+
+	<!-- Section about me start -->
+	<section id="about">
+		<div class="wrap-info">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="about-title wow fadeInUp animated">О себе</h2>
+					</div>
+					<div class="col-sm-6">
+						<div class="photo wow fadeInLeft animated">
+							<figure>
+								<img src="img/foto.jpg" alt="Максим Коломиец">
+							</figure>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="about-text">
+							<p class="about-text wow fadeInRight animated">На данном этапе моей жизни главная цель – это достижение вершин в Web-разработке. Для этого каждый день уделяю время на изучения JavaScript, новых технологий верстки.<br><br><span class="personal">Личные качества:</span></p>
+							<ul class="list-quality wow fadeInRight animated" data-wow-delay=".2s">
+								<li><span>Быстрая обучаемость</span></li>
+								<li><span>Целеустремленность</span></li>
+								<li><span>Ответстенность</span></li>
+								<li><span>Усидчивость</span></li>
+								<li><span>Внимательность к деталям</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="scroll-down">
+				<a href="#works">
+					<i class="fa fa-angle-down"></i>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- Section about end -->
+
+	<!-- Section works start -->
+	<section id="works">
+		<div class="wrap-info">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="about-title wow fadeInUp animated">Примеры работ</h2>
+					</div>
+					<div class="col-sm-6">
+						<div class="works-img wow fadeInLeft animated">
+							<figure class="effect-bubba">
+								<img src="img/ironmass-xs.jpg" alt="Ironmass">
+								<figcaption>
+									<div class="work-info">
+										<span>Technologies</span>
+										<p>HTML - CSS3 - jQuery - Full Responsive</p>
+									</div>
+									<a href="https://makskolomiiets.github.io/Ironmass/" class="link-work"></a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="works-img wow fadeInRight animated">
+							<figure class="effect-bubba">
+								<img src="img/bakery-xs.jpg" alt="Bakery">
+								<figcaption>
+									<div class="work-info">
+										<span>Technologies</span>
+										<p>HTML - CSS3 - jQuery - Full Responsive - Sass</p>
+									</div>
+									<a href="https://makskolomiiets.github.io/Bakery/" class="link-work"></a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="scroll-down work-scroll-down">
+				<a href="#contact">
+					<i class="fa fa-angle-down"></i>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- Section works end -->
+
+	<!-- Section contact start -->
+	<section id="contact">
+		<div class="wrap-info">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="about-title wow fadeInUp animated">Контакты</h2>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<div class="contact-me wow fadeInLeft animated">
+							<div class="contact-icon home"></div>
+							<p>Украина, Киев</p>
+							<div class="clearfix"></div>
+							<div class="contact-icon telephone"></div>
+							<p>+380 66 165 10 97</p>
+							<div class="clearfix"></div>
+							<div class="contact-icon mail"></div>
+							<p><a href="mailto:kolomiiets.maks@gmail.com">kolomiiets.maks@gmail.com</a></p>
+						</div>
+					</div>
+					<div class="col-sm-8 col-xs-12">
+						<form id="contact-form" action="">
+							<label for="name" class="wow fadeInUp animated">
+								<i class="fa fa-user"></i>
+								Введите имя:
+							</label>
+							<input type="text" name="name" id="name" class="wow fadeInUp animated" required="required">
+							<label for="phone" class="wow fadeInUp animated" data-wow-delay=".1s">
+								<i class="fa fa-phone"></i>
+								Введите номер телефона:
+							</label>
+							<input type="tel" name="phone" id="phone" class="wow fadeInUp animated" data-wow-delay=".1s" required="required">
+							<label for="mail" class="wow fadeInUp animated" data-wow-delay=".2s">
+								<i class="fa fa-envelope"></i>
+								Введите E-mail:
+							</label>
+							<input type="email" name="mail" id="mail" class="wow fadeInUp animated" data-wow-delay=".2s" required="required">
+							<label for="text" class="wow fadeInUp animated" data-wow-delay=".3s">
+								<i class="fa fa-file-text"></i>
+								Введите сообщение:
+							</label>
+							<textarea name="text" id="text" class="wow fadeInUp animated" data-wow-delay=".3s" required="required"></textarea>
+							<button type="submit" class="wow fadeInUp animated" data-wow-delay=".4s">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section contact end -->
+
+	<!-- Footer start -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					&copy; <a href="https://makskolomiiets.github.io/">https://makskolomiiets.github.io</a>
+				</div>
+				<div class="col-sm-6">
+					<p>Максим Коломиец</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
+
+	<!-- Scroll to top -->
+	<div class="scroll-up">
+		<a href="#home"></a>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
