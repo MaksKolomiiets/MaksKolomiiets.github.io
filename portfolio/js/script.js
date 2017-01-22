@@ -36,16 +36,13 @@ $(document).ready(function () {
 	});
 
 	$(window).scroll(function() {
-		var elems = $("section");
-		var coord = $(document).scrollTop();
-
-		if(coord == elems.offset().top - 300) {
-			$(".one").animate({
-				opacity: '1'
-			},500);
-		};
+		if ($(this).scrollTop() > 200) {
+			$('.scroll-up').fadeIn();
+		} else {
+			$('.scroll-up').fadeOut();
+		}
 	});
-
+	
 
 	/* ---------------------------------------------- /*
 	*   Form effect
