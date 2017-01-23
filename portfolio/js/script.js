@@ -22,7 +22,7 @@ $(document).ready(function () {
 	});
 
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-		$('#home').css({'background-attachment': 'scroll'});
+		$('.bg-cover').css({'background-attachment': 'scroll'});
 	};
 
 
