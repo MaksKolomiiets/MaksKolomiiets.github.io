@@ -21,10 +21,6 @@ $(document).ready(function () {
 		$(".bg-screen-height").height($(window).height());
 	});
 
-	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-		$('.bg-cover').css({'background-attachment': 'scroll'});
-	};
-
 
 	/* ---------------------------------------------- /*
 	* Smooth scroll
