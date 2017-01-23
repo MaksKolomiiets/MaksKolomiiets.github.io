@@ -618,6 +618,7 @@ footer p {
 
 .scroll-up {
 	position: fixed;
+	display: none;
 	bottom: 40px;
 	right: 40px;
 	z-index: 500;
@@ -689,12 +690,21 @@ footer p {
 		background-image: url('../img/cover-xs.jpg');
 		background-attachment: scroll;
 	}
+
+	.header-overlay {
+		height: 600px;
+	}
+
 	.main-nav li ~ li {
 		padding-left: 10px;
 	}
 
 	.main-nav li a {
 		font-size: 14px;
+	}
+
+	.intro {
+		top: 250px;
 	}
 
 	.intro h1 {

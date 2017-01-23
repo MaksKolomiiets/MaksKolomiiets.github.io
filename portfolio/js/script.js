@@ -23,8 +23,6 @@ $(document).ready(function () {
 		});
 	} else {
 		$('.bg-screen-height').height(600);
-		$('.header-overlay').height(600);
-		$('.intro').css({'top': '250px'});
 	}
 
 
