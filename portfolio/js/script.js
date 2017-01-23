@@ -21,6 +21,10 @@ $(document).ready(function () {
 		$(".bg-screen-height").height($(window).height());
 	});
 
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+		$('#home').css({'background-attachment': 'scroll'});
+	};
+
 
 	/* ---------------------------------------------- /*
 	* Smooth scroll
@@ -42,7 +46,7 @@ $(document).ready(function () {
 			$('.scroll-up').fadeOut();
 		}
 	});
-	
+
 
 	/* ---------------------------------------------- /*
 	*   Form effect
@@ -51,7 +55,7 @@ $(document).ready(function () {
 	$("#contact-form input, #contact-form textarea").on("focusin", function() {
         $(this).prev().css("marginTop", "-35px")
     }).on("focusout", function() {
-        return !$(this).val() && void $(this).prev().css("marginTop", "0px")
+        return !$(this).val() && $(this).prev().css("marginTop", "0px")
     });
 
 
