@@ -22,7 +22,9 @@ $(document).ready(function () {
 			$(".bg-screen-height").height($(window).height());
 		});
 	} else {
-		$('.bg-screen-height').height(600) && $('.header-overlay').height(600);
+		$('.bg-screen-height').height(600);
+		$('.header-overlay').height(600);
+		$('.intro').css({'bottom': '250px'});
 	}
 
 
