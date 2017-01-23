@@ -15,11 +15,15 @@ $(document).ready(function () {
 	* Size Header BG
 	/* ---------------------------------------------- */
 
-	$(".bg-screen-height").height($(window).height());
-
-	$(window).resize(function(){
+	if ($(window).width() > 768) {
 		$(".bg-screen-height").height($(window).height());
-	});
+
+		$(window).resize(function(){
+			$(".bg-screen-height").height($(window).height());
+		});
+	} else {
+		$('.bg-screen-height').height(600) && $('.header-overlay').height(600);
+	}
 
 
 	/* ---------------------------------------------- /*
