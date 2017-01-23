@@ -24,7 +24,7 @@ $(document).ready(function () {
 	} else {
 		$('.bg-screen-height').height(600);
 		$('.header-overlay').height(600);
-		$('.intro').css({'bottom': '250px'});
+		$('.intro').css({'top': '250px'});
 	}
 
 
