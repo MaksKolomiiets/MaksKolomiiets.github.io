@@ -1,3 +1,10 @@
+ // Preloader
+$(window).load(function() {
+		$('.status').fadeOut();
+		$('.preloader').delay(300).fadeOut('slow');
+});
+
+
 //Change sheets breakfast menu
 $(document).ready(function () {
 	var zindex = 371;
@@ -10,9 +17,8 @@ $(document).ready(function () {
 		if ($('.breakfast-wrap-menu').hasClass(nameClass)) {
 			$('.' + nameClass).css('z-index', zindex++);
 		}
-
 	});
-});
+
 
 //Hide/Show of the block on the slider
 	$('.btn-full-img').hover(function () {
@@ -28,3 +34,5 @@ $(document).ready(function () {
 		$(this).toggleClass('active');
 		$('.main-menu').toggleClass('active');
 	});
+
+});

@@ -53,6 +53,26 @@ body {
 	clear: both;
 }
 
+.preloader {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	background: #fff;
+	z-index: 9999;
+}
+
+.status {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 188px;
+	height: 142px;
+	margin: -71px 0 0 -94px;
+	background: url(../img/bread.gif) center no-repeat;
+}
+
 .showcase {
 	width: 100%;
 	max-width: 1600px;

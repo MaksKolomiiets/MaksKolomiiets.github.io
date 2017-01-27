@@ -28,6 +28,30 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 
+/*--- Preloader begin ---*/
+
+.preloader {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	background: #fff;
+	z-index: 9999;
+}
+
+.status {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 190px;
+	height: 190px;
+	margin: -95px 0 0 -95px;
+	background: url(../img/arrow.gif) center no-repeat;
+}
+
+/*--- Preloader end ---*/
+
 /*--- Header begin ---*/
 
 #header {
