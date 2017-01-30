@@ -359,62 +359,32 @@ img {
 	transform: scale(1);
 }
 
+.effect-bubba:hover .description-work {
+	opacity: 1;
+	-webkit-transform: translate3d(50px,0,0);
+	-o-transform: translate3d(50px,0,0);
+	-moz-transform: translate3d(50px,0,0);
+	-ms-transform: translate3d(50px,0,0);
+	transform: translate3d(50px,0,0);
+}
+
 .effect-bubba:hover .link-work {
 	opacity: 1;
-	-webkit-transform: translate3d(0,-70px,0);
-	-o-transform: translate3d(0,-70px,0);
-	-moz-transform: translate3d(0,-70px,0);
-	-ms-transform: translate3d(0,-70px,0);
-	transform: translate3d(0,-70px,0);
+	-webkit-transform: translate3d(-50px,0,0);
+	-o-transform: translate3d(-50px,0,0);
+	-moz-transform: translate3d(-50px,0,0);
+	-ms-transform: translate3d(-50px,0,0);
+	transform: translate3d(-50px,0,0);
 }
 
-.effect-bubba:hover .work-info {
-	opacity: 1;
-	-webkit-transform: translate3d(0,70px,0);
-	-o-transform: translate3d(0,70px,0);
-	-moz-transform: translate3d(0,70px,0);
-	-ms-transform: translate3d(0,70px,0);
-	transform: translate3d(0,70px,0);
-}
-
-.work-info {
-	position: absolute;
-	top: 10%;
-	left: 0;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 35px;
-	opacity: 0;
-	text-align: center;
-	z-index: 101;
-	-webkit-transform: translate3d(0,0,0);
-	-o-transform: translate3d(0,0,0);
-	-moz-transform: translate3d(0,0,0);
-	-ms-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
-	-moz-transition: 0.3s;
-	transition: 0.3s;
-}
-
-.work-info span {
-	font-size: 26px;
-	font-style: bold;
-	color: #F44336;
-}
-
-.work-info p {
-	padding-top: 10px;
-}
-
-.link-work {
+.work-icon {
 	position: absolute;
 	display: block;
-	right: 45%;
-	bottom: 10%;
+	left: 50%;
+	top: 50%;
 	width: 50px;
 	height: 50px;
+	margin-top: -25px;
 	opacity: 0;
 	background-color: #F44336;
 	border-radius: 50%;
@@ -431,8 +401,15 @@ img {
 	transition: 0.3s;
 }
 
-.link-work:before {
-	content: '\f054';
+.description-work {
+	margin-left: -105px;
+}
+
+.link-work {
+	margin-left: 55px;
+}
+
+.work-icon:before {
 	position: relative;
 	top: 14px;
 	font-family: FontAwesome;
@@ -440,7 +417,15 @@ img {
 	color: #fff;
 }
 
-.link-work:hover {
+.description-work:before {
+	content: '\f067';
+}
+
+.link-work:before {
+	content: '\f054';
+}
+
+.link-work:hover, .description-work:hover {
 	background-color: #9C2820;
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
@@ -455,6 +440,67 @@ img {
 .work-scroll-down .fa {
 	color: #111;
 }
+
+/* -------------- Pop-Up start ------------------ */
+
+.modal-form {
+	position: fixed;
+	display: none;
+	width: 100%; 
+	height: 100%;
+	top: 0; 
+	left: 0;
+	opacity: 0;
+	z-index: 3000;
+	overflow: hidden;
+}
+
+.overlay {
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 100%; 
+	height: 100%;
+	background-color: #000;
+	opacity: 0.8;
+	cursor: pointer;
+	z-index: 2000;
+}
+
+.wrap-modal {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.container-modal {
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+	margin-top: 40px;
+	background-color: #fff;
+	text-align: left;
+}
+
+.container-modal img {
+	width: auto;
+	max-width: 100%;
+	max-height: 83vh;
+	margin: 0 auto;
+}
+
+.modal-title {
+	padding: 20px;
+	font-weight: bold;
+	color: #111;
+}
+
+/* --------------- Pop-Up end ------------------- */
 
 /* ---------------------------------------------- /*
  * Works end
@@ -659,31 +705,10 @@ footer p {
 /* ---------------------------------------------- */
 
 @media screen and (max-width: 992px) {
-	.effect-bubba:hover .link-work {
-		-webkit-transform: translate3d(0,-35px,0);
-		-o-transform: translate3d(0,-35px,0);
-		-moz-transform: translate3d(0,-35px,0);
-		-ms-transform: translate3d(0,-35px,0);
-		transform: translate3d(0,-35px,0);
-	}
-
-	.effect-bubba:hover .work-info {
-		-webkit-transform: translate3d(0,35px,0);
-		-o-transform: translate3d(0,35px,0);
-		-moz-transform: translate3d(0,35px,0);
-		-ms-transform: translate3d(0,35px,0);
-		transform: translate3d(0,35px,0);
-	}
-
-	.work-info p {
-		font-size: 18px;
-	}
-
 	.contact-me p {
 		font-size: 12px;
 	}
 }
-
 
 @media screen and (max-width: 768px) {
 	.bg-cover {
@@ -717,10 +742,6 @@ footer p {
 
 	.scroll-down {
 		display: none;
-	}
-
-	.wrap-info {
-		padding: 40px 0;
 	}
 
 	.about-title {

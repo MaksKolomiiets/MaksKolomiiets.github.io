@@ -49,6 +49,41 @@ $(document).ready(function () {
 
 
 	/* ---------------------------------------------- /*
+	 * Pop Up
+	/* ---------------------------------------------- */
+
+    $('a.description-work').click( function(event){
+        var bgImg = $(this).attr("href");
+        var title = $(this).attr("title");
+        event.preventDefault();
+
+        $('.overlay').fadeIn(400,
+            function(){ 
+                $('.modal-form') 
+                .css('display', 'block') 
+                .animate({opacity: 1}, 200);
+                $('.container-modal figure').prepend('<img src=' + bgImg + ' alt="">');
+                $('.modal-title').text(title);
+                $("html").css({
+    				marginRight: '17px',
+    				overflowY: "hidden"
+                });
+            });
+    });
+
+    $('.modal-form').click( function(){
+    	$("html").css({
+        	marginRight: '0px',
+    		overflowY: "auto"
+    	});
+    	$('.modal-form').css('display', 'none');
+    	$('.overlay').fadeOut(400);
+    	$('.container-modal img').remove();
+    	$('.modal-title').text('');
+    });
+    
+
+	/* ---------------------------------------------- /*
 	*   Form effect
 	/* ---------------------------------------------- */
 
