@@ -740,6 +740,15 @@ footer p {
 		font-size: 16px;
 	}
 
+	.container-modal {
+		margin-top: 5px;
+	}
+
+	.modal-title {
+		font-size: 12px;
+		padding: 10px;
+	}
+
 	.scroll-down {
 		display: none;
 	}
