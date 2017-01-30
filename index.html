@@ -8,7 +8,7 @@
 
 	<link rel="stylesheet" href="portfolio/css/grid.min.css">
 	<link rel="stylesheet" href="portfolio/css/animate.css">
-	<link rel="stylesheet" href="portfolio/lib/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="portfolio/font/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="portfolio/css/style.css">
 
 	<script>
@@ -33,8 +33,8 @@
 		<div class="bg-cover bg-screen-height">
 			<div class="header-overlay"></div>
 			<ul class="main-nav">
-				<li><a href="#home">Главная</a></li>
 				<li><a href="#about">О себе</a></li>
+				<li><a href="#skills">Навыки</a></li>
 				<li><a href="#works">Работы</a></li>
 				<li><a href="#contact">Контакты</a></li>
 			</ul>
@@ -82,13 +82,56 @@
 				</div>
 			</div>
 			<div class="scroll-down">
-				<a href="#works">
+				<a href="#skills">
 					<i class="fa fa-angle-down"></i>
 				</a>
 			</div>
 		</div>
 	</section>
 	<!-- Section about end -->
+
+	<!-- Skills start -->
+	<section id="skills">
+		<div class="wrap-info">
+			<div class="container">
+				<div class="row skills">
+					<div class="col-md-12">
+						<h2 class="about-title wow fadeInUp animated">Навыки</h2>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<span data-percent="85" class="chart easyPieChart">
+                            <span class="percent">85</span>
+                        </span>
+						<p>HTML5 - валидность, семантика, кроссбраузерность</p>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<span data-percent="85" class="chart easyPieChart">
+                            <span class="percent">85</span>
+                        </span>
+						<p>CSS3 - media queries, свойства transition, transformation, animation и т.д</p>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<span data-percent="50" class="chart easyPieChart">
+                            <span class="percent">50</span>
+                        </span>
+						<p>JavaScript - базовое понимания языка, DOM, работа со страницей</p>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<span data-percent="60" class="chart easyPieChart">
+                            <span class="percent">60</span>
+                        </span>
+						<p>jQuery - написание простой логики, подключения и использование готовых модулей</p>
+					</div>
+				</div>
+			</div>
+			<div class="scroll-down skills-scroll-down">
+				<a href="#works">
+					<i class="fa fa-angle-down"></i>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- Skills end -->
 
 	<!-- Section works start -->
 	<section id="works">
@@ -101,9 +144,9 @@
 					<div class="col-sm-6">
 						<div class="works-img wow fadeInLeft animated">
 							<figure class="effect-bubba">
-								<img src="portfolio/img/ironmass-xs.jpg" alt="Ironmass">
+								<img src="portfolio/img/ironmass.jpg" alt="Ironmass">
 								<figcaption>
-									<a href="portfolio/img/ironmass-xs.jpg" class="work-icon description-work" title="HTML - CSS3 - jQuery - Full Responsive"></a>
+									<a href="portfolio/img/ironmass.jpg" class="work-icon description-work" title="HTML - CSS3 - jQuery - Full Responsive"></a>
 									<a href="https://makskolomiiets.github.io/Ironmass/" class="work-icon link-work"></a>
 								</figcaption>
 							</figure>
@@ -112,9 +155,9 @@
 					<div class="col-sm-6">
 						<div class="works-img wow fadeInRight animated">
 							<figure class="effect-bubba">
-								<img src="portfolio/img/bakery-xs.jpg" alt="Bakery">
+								<img src="portfolio/img/bakery.jpg" alt="Bakery">
 								<figcaption>
-									<a href="portfolio/img/bakery-xs.jpg" class="work-icon description-work" title="HTML - CSS3 - jQuery - Full Responsive - Sass"></a>
+									<a href="portfolio/img/bakery.jpg" class="work-icon description-work" title="HTML - CSS3 - jQuery - Full Responsive - Sass"></a>
 									<a href="https://makskolomiiets.github.io/Bakery/" class="work-icon link-work"></a>
 								</figcaption>
 							</figure>
@@ -218,6 +261,8 @@
 
 	<script src="portfolio/js/jquery.min.js"></script>
 	<script src="portfolio/js/wow.min.js"></script>
+	<script src="portfolio/js/jquery.easypiechart.js"></script>
+	<script src="portfolio/js/waypoints.min.js"></script>
 	<script src="portfolio/js/script.js"></script>
 
 </body>

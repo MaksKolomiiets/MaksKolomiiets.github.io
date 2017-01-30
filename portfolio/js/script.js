@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 
 	/* ---------------------------------------------- /*
-	* Size Header BG
+	 * Size Header BG
 	/* ---------------------------------------------- */
 
 	if ($(window).width() > 768) {
@@ -27,7 +27,7 @@ $(document).ready(function () {
 
 
 	/* ---------------------------------------------- /*
-	* Smooth scroll
+	 * Smooth scroll
 	/* ---------------------------------------------- */
 
 	$("a[href^='#']").bind("click", function(e){
@@ -46,6 +46,25 @@ $(document).ready(function () {
 			$('.scroll-up').fadeOut();
 		}
 	});
+
+
+	/* ---------------------------------------------- /*
+	 * Skills
+    /* ---------------------------------------------- */
+
+    $('.skills').waypoint(function(){
+        $('.chart').each(function(){
+        	$(this).easyPieChart({
+                size: 160,
+                animate: 2000,
+                lineCap:'butt',
+                scaleColor: false,
+                barColor: '#F44336',
+                trackColor: 'transparent',
+                lineWidth: 10
+            });
+        });
+    },{offset:'80%'});
 
 
 	/* ---------------------------------------------- /*
@@ -84,7 +103,7 @@ $(document).ready(function () {
     
 
 	/* ---------------------------------------------- /*
-	*   Form effect
+	 * Form effect
 	/* ---------------------------------------------- */
 
 	$("#contact-form input, #contact-form textarea").on("focusin", function() {
