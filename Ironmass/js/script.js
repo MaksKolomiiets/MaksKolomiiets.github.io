@@ -43,22 +43,6 @@ $(document).ready(function() {
         $('.module-login').toggleClass('active');
     });
 
-    // Cursor on the slider
-        $('.swiper-slide').mousedown(function() {
-            $(this).css({cursor: '-webkit-grab'}),
-            $(this).css({cursor: 'grab'});
-        });
-
-        $('.swiper-slide').mouseup(function() {
-            $(this).css({cursor: 'default'});
-        });
-
-        var swiper = new Swiper('.swiper-container', {
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            spaceBetween: 30
-        });
-
 
     // Gallery Pop-Up
     $('a.go').click( function(event){
