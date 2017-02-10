@@ -1,7 +1,9 @@
- // Preloader
+// Preloader
 $(window).load(function() {
-		$('.status').fadeOut();
-		$('.preloader').delay(300).fadeOut('slow');
+	// Preloader
+	$('.status').fadeOut();
+	$('.preloader').delay(300).fadeOut('slow');
+
 });
 
 
@@ -28,6 +30,26 @@ $(document).ready(function () {
 		$('.flex-active-slide .img-text').animate({'opacity': '1'}, 500);
 	}
 	);
+
+// Carousel
+	$('#carousel').flexslider({
+  		animation: "slide",
+  		controlNav: false,
+  		animationLoop: false,
+  		slideshow: false,
+  		itemWidth: 90,
+  		itemMargin: 20,
+  		asNavFor: '#slider'
+  	});
+
+  	$('#slider').flexslider({
+  		animation: "slide",
+  		controlNav: false,
+  		animationLoop: false,
+  		slideshow: false,
+  		useCSS: false,
+  		sync: "#carousel"
+  	});
 
 	//Show mobile menu
 	$('.mobilepanel-toggle').click(function () {
